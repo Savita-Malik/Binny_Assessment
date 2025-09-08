@@ -71,7 +71,7 @@ export default function ProductList() {
                     <Text style={{ fontSize: 16, marginBottom: 10 }}>
                         Stored Token: {token || "No token saved yet"}
                     </Text>
-                    {token &&
+                    {!token &&
                         <TouchableOpacity
                             style={styles.button}
                             activeOpacity={0.7}
